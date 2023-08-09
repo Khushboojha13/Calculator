@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="calculator">
+        <form action="#" class="calcultaorform" name="calcul">
+            <div class="result">
+                <input type="text" name="display" class="result1">
+            </div>
+            <div class="box">
+                <input type="button" class="two" value="AC" onclick="clears()">
+                <input type="button" class="two" value="DEL" onclick="deletes()">
+            </div>
+            <div class="box">
+                <input type="button" class="btn" value="1"onclick="valuebtn(this)">
+                <input type="button"class="btn" value="2" onclick="valuebtn(this)">
+                <input type="button"class="btn" value="3" onclick="valuebtn(this)">
+                <input type="button"class="btn" value="+" onclick="valuebtn(this)">
+            </div>
+            <div class="box">
+                <input type="button" class="btn" value="4" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="5" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="6" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="-" onclick="valuebtn(this)">
+            </div> 
+            <div class="box"> 
+                <input type="button" class="btn" value="7" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="8" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="9" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="*" onclick="valuebtn(this)">
+            </div>
+            <div class="box"> 
+                <input type="button" class="btn" value="0" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="00" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="/" onclick="valuebtn(this)">
+                <input type="button" class="btn" value="=" onclick="evaluates()">
+            </div> 
+        </form> 
+       </div>
+ 
+       <script src="index.js"></script> 
+</body>
+</html>

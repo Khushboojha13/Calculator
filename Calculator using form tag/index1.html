@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="calculator">
+        <h1>Calculator</h1>
+        <form action="#" class="calcultaorform">
+            <div class="result">
+                <input type="text" name="display" class="result">
+            </div>
+
+            <!--yaha ham display.value access kar pa rahe b/c hamne input tag use kiya hai and usme name diya b/c of name we are able to print  the value of input me jo hai result bar me -->
+            <div class="box">
+                <input type="button" class="two" value="AC" onclick="display.value=''">
+                <input type="button" class="two" value="DEL" onclick="display.value=display.value.slice(0,-1)">  <!--in slice -1 indicates last element -2 indicates last ka previous element and so on-->
+            </div>
+            <div class="box">
+                <input type="button" class="btn" value="1" onclick="display.value+='1'">
+                <input type="button"class="btn" value="2"  onclick="display.value+='2'">
+                <input type="button" class="btn" value="3" onclick="display.value+='3'">
+                <input type="button" class="btn" value="+" onclick="display.value+='+'">
+            </div>
+            <div class="box">
+                <input type="button" class="btn" value="4" onclick="display.value+='4'">
+                <input type="button" class="btn" value="5" onclick="display.value+='5'">
+                <input type="button" class="btn" value="6" onclick="display.value+='6'">
+                <input type="button" class="btn" value="-" onclick="display.value+='-'">
+            </div>
+            <div class="box">
+                <input type="button" class="btn" value="7" onclick="display.value+='7'">
+                <input type="button" class="btn" value="8" onclick="display.value+='8'">
+                <input type="button" class="btn" value="9" onclick="display.value+='9'">
+                <input type="button" class="btn" value="*" onclick="display.value+='*'">
+            </div> 
+            <div class="box">
+                <input type="button" class="btn" value="0"  onclick="display.value+='0'">
+                <input type="button" class="btn" value="00" onclick="display.value+='00'">
+                <input type="button" class="btn" value="="  onclick="display.value=eval(display.value)">
+                <input type="button" class="btn" value="/"  onclick="display.value+='/'">
+            </div>
+        </form>
+       </div>
+
+</body>
+</html>
